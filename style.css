@@ -1,0 +1,132 @@
+body {
+margin: 0px;
+font-family: verdana, helvetica, sans-serif;
+font-size: 12px;
+color: #000;
+background: #FFF;
+text-align: left;
+}
+
+table {
+font-family: verdana, helvetica, sans-serif;
+font-size: 12px;
+text-align: left;
+color: #000;
+}
+
+.topbg {
+background-image: url(images/topbg.gif);
+	font-size: 12px;
+	font-family : Tahoma;
+	color : #666666;
+height: 26px;
+width: 100%;
+}
+
+.leftbg {
+background-image: url(images/leftbg.gif);
+}
+
+.rightbg {
+background-image: url(images/rightbg.gif);
+}
+
+A.menu:link {
+	COLOR: #767981; TEXT-DECORATION: none
+}
+A.menu:active {
+	COLOR: #767981; TEXT-DECORATION: none
+}
+A.menu:visited {
+	COLOR: #767981; TEXT-DECORATION: none
+}
+A.menu:hover {
+	COLOR: #CC0000; TEXT-DECORATION: none
+}
+TD.menu {
+	FONT-SIZE: 10px; COLOR: #767981; FONT-FAMILY: Tahoma,Verdana,Arial; text-transform: uppercase
+}
+DIV.menu {
+	FONT-SIZE: 10px; COLOR: #767981; FONT-FAMILY: Tahoma,Verdana,Arial; text-transform: uppercase
+}
+
+A:link {
+	color: #CC0000;
+	text-decoration: none;
+}
+
+A:visited {
+	color: #CC0000;
+	text-decoration: none;
+}
+
+A:active {
+	color: #CC0000;
+	text-decoration: none;
+}
+
+A:hover {
+	color: #CCCCCC;
+	text-decoration: none;
+}
+
+A.dark:link {
+	color: #666666;
+	text-decoration: none;
+}
+
+A.dark:visited {
+	color: #666666;
+	text-decoration: none;
+}
+
+A.dark:active {
+	color: #666666;
+	text-decoration: none;
+}
+
+A.dark:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+TD {
+	font-size: 12px;
+	font-family : Verdana;
+}
+
+P {
+	font-size: 12px;
+	font-family : Verdana;
+}
+
+TD.dark {
+	font-size: 12px;
+	font-family : Tahoma;
+	color : #666666;
+}
+
+P.dark {
+	font-size: 11px;
+	font-family : Verdana;
+	color : #666666;
+}
+
+TD.smaller {
+	font-size: 11px;
+	font-family : Tahoma;
+	color : #000000;
+}
+
+P.smaller {
+	font-size: 11px;
+	font-family : Verdana;
+	color : #000000;
+}
+
+HR {
+	color : #D2D2CA;
+	height : 1px;
+}
+
+

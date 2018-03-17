@@ -1,0 +1,12 @@
+These are the instructions for the Ecommerce Plus Updater (PHP Version)
+=========================================================
+
+This updater is for use only with the PHP version of the Ecommerce Plus Templates.
+
+All instructions for the Ecommerce Plus Updaters are now online here...
+
+http://www.ecommercetemplates.com/updater_info.asp
+
+Many Thanks for using our products
+
+EcommerceTemplates.com

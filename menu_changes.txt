@@ -1,0 +1,141 @@
+    Menu changes...
+
+	Open the file Templates/Main.dwt
+
+              Before each of the lines there is a comment explaining what 
+              changes can be made - here are some examples: 
+
+              Locate mymenu.mainmenuitemsize(135,16) - defines the width and 
+              height in pixels of a menu item in the main menu. (The first one 
+              to appear). 
+              Locate mymenu.submenuitemsize(152,16) - defines the width and 
+              height in pixels of the sub menu items.
+
+              Locate mymenu.submenuplacing(0,0) - defines the position of the 
+              sub menus in relation to the main menu.the first number will move 
+              the sub menus more to the left, and the second number will move 
+              the sub menus down. If the second number is negative it will 
+              move the sub menus up. 
+
+              Locate 
+              mymenu.mainborderimages("images/greypixel.gif","images/greypixel.gif","images/clearpixel.gif","images/greypixel.gif")
+              mymenu.mainbordercorners("images/greypixel.gif","images/greypixel.gif","images/greypixel.gif","images/greypixel.gif")
+			 - use this function if you want to define a graphical border for 
+              the main menu - here we've given the menu items a grey border.The images are, in order, those which 
+              are to the left, right, top and bottom of the main menu and the respective corners.
+
+              
+	 		  Locate
+			  mymenu.subborderimages("images/greypixel.gif","images/greypixel.gif","images/greypixel.gif","images/greypixel.gif")
+              mymenu.subbordercorners("images/greypixel.gif","images/greypixel.gif","images/greypixel.gif","images/greypixel.gif")
+              - as mainborderimages, but for all submenus so you can define a 
+              different style for sub menus. If you wish to have the same style, 
+              simply define the same images. Here we've used a grey border.
+ 
+              Locate mymenu.mainborderdimensions(1,1,1) - These are the 
+              dimensions of the main menu borders. The first parameter is the 
+              left width, the second the right width, and the third the height 
+              at both top and bottom. If you did wish the top and bottom to have 
+              different heights, you can of course pad with rows of transparent 
+              pixels.
+              Locate mymenu.subborderdimensions(1,1,1) - As above but for all 
+              sub menus.
+
+              Locate mymenu.mainmenucolor("#F7F7F4") - The color of the main 
+              menu cells. Any valid HTML color is ok. 
+              Locate mymenu.submenucolor("#F7F7F4") - The color of the sub menu 
+              cells. 
+
+	          Locate mymenu.netscapeadjust(3,3) - Unfortunately Netscape 4.7 
+              does not behave quite so well with DHTML. If you find that the 
+              text in the menu items is vertically aligned "top" in NN 4.7, then 
+              adjusting these numbers will nudge it down by that number of 
+              pixels. The first number is for the main menus, and the second for 
+              the sub menus. 
+
+	 Locate mymenu.definemainspacer("images/greypixel.gif",1)
+	 - The graphic that goes between menu items in the main menu. If you do not wish 
+              to define one then simply leave this line blank. 
+              mymenu.definesubspacer("images/greypixel.gif",1)
+ 	 - As above but for sub menus.
+
+    Locate
+    	mymenu.addMenu("home","O HOME", "default.asp")
+    	mymenu.addMenu("main","O MAIN", "#")
+
+		/* <%
+		' Please note, the following line of code is used to automatically create the links for the product sections
+		' If you do not want to use this feature, please delete this line of code in your Main.dwt template
+		' along with the corresponding section below.
+		%> */
+		mymenu.addMenu("products","O PRODUCTS", "categories.php")
+
+		mymenu.addMenu("help","O HELP", "#")
+		mymenu.addMenu("affiliates","O AFFILIATES", "affiliate.php")
+		mymenu.addMenu("search","O SEARCH", "search.php")
+		mymenu.addMenu("checkout","O CHECKOUT", "cart.php")
+		// This line is required after the main menu is defined.
+		mymenu.showMainMenu()
+
+	This where you define you main menu items and their links. The order is category eg "main", name to appear eg. "O MAIN", link eg."default.asp
+	The links to products and categories are generated automatically from the ones you add in your online admin section.
+		
+		Locate
+		// Define the sub menus
+		mymenu.addSubMenu("main", "", "O ABOUT US", "about.php")
+		mymenu.addSubMenu("main", "", "O HELP", "help.php")
+		mymenu.addSubMenu("main", "", "O SERVICES", "services.php")
+		mymenu.addSubMenu("main", "", "O CONTACT", "contact.php")
+		mymenu.addSubMenu("main", "", "O EMAIL", "mailto:#")
+		
+	These are the sub-menu choices, notice that we use the same category name "main" so that they "pop-out" from the option Main
+		
+		Locate
+		mymenu.addSubMenu("help", "faq", "O FAQ", "#")
+		mymenu.addSubMenu("help", "tutorials", "O TUTORIALS", "#")
+
+		mymenu.addSubMenu("faq", "", "O COMPATIBILITY", "#")
+		mymenu.addSubMenu("faq", "", "O DHTML MENUS", "#")
+		mymenu.addSubMenu("faq", "", "O DHTML MENUS", "#")
+		mymenu.addSubMenu("faq", "", "O GRAPHICS", "#")
+		mymenu.addSubMenu("faq", "", "O LICENSE", "#")
+
+
+		mymenu.addSubMenu("tutorials", "", "O TEMPLATE SET UP", "#")
+		mymenu.addSubMenu("tutorials", "", "O INCLUDE PAGES", "#")
+		mymenu.addSubMenu("tutorials", "navigation", "O NAVIGATION", "#")
+
+		mymenu.addSubMenu("navigation", "", "O FP NAVIGATION", "#")
+		mymenu.addSubMenu("navigation", "", "O DW NAVIGATION", "#")
+		mymenu.addSubMenu("navigation", "", "O GL NAVIGATION", "#")
+		
+	These are the submenus that pop-out from the HELP button on the menu and shows how to have second and third level submenus
+	To see how it works - look at this example:
+		mymenu.addSubMenu("help", "tutorials", "O TUTORIALS", "#")
+	This creates a pop-out entitled O TUTORIALS from the HELP button, it also defines a new submenu ie "tutorials"
+	This mean we can have another pop-out level under the name "tutorials" eg.
+		mymenu.addSubMenu("tutorials", "navigation", "O NAVIGATION", "#")
+	This creates a pop-out entitled O NAVIGATION from the TUTORIALS button, it also defines a new submenu ie "navigation"
+	The last set of pop-outs are:
+		mymenu.addSubMenu("navigation", "", "O FP NAVIGATION", "#")
+		mymenu.addSubMenu("navigation", "", "O DW NAVIGATION", "#")
+		mymenu.addSubMenu("navigation", "", "O GL NAVIGATION", "#")
+	Notice there are no submenus defined ie "",
+	
+
+
+    To change the colour of the text links, you'll need to open the file styles.css. Change the hex
+	values to the ones that best suit your site. The CSS also governs the Uppercase lettering although this is ignored by NN4.7x
+		 
+	NOTES:
+	There is nothing in the .js file that needs editing
+	The menu will only function correctly in .asp pages
+	You must have the files clearpixel.gif, popouttext.js and styles.css in the root of your web, where your main page resides.
+	You can link to another site by using a full URL - for example "http://www.ecommercetemplates.com/".
+	If you want to make the link open in a new window, for example mymenu.addSubMenu("help", "", "<b>DHTML</b>", 'http://www.ecommercetemplates.com/help/menus.asp" target="_blank')
+	Be careful with the punctuation here
+	
+	There is a FAQ section on our site here http://www.ecommercetemplates.com/help/menus.asp
+	
+	
+	

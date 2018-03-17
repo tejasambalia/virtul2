@@ -1,0 +1,39 @@
+End User License Agreement 
+============================
+
+Copyright 2000, 2001, 2002, 2003, 2004, 2005 by Internet Business Solutions SL
+
+You should carefully read the following terms and conditions before using this template. 
+
+This License Agreement permits you to install the accompanying version of the template package for use on one computer. The purpose of this package is to assist you in the development of web sites for personal or commercial use, free of any royalties or fees.
+
+This template package is provided "as is" without warranty of any kind, either expressed or implied.
+
+The end-user may not sublicense, assign or distribute copies of this package to others. The end-user may not translate, rent, loan, resell for profit, distribute, or otherwise assign or transfer this package, or create derivative works based on this package or any parts thereof, except those actions necessary to create or develop web sites using this theme and template package.
+
+In no event shall Internet Business Solutions SL be liable for any damages including, but not limited to, direct, indirect, special, incidental or consequential damages or other losses arising out of the use of or inability to use the template package. 
+
+This agreement is offered in good faith. Results have been tested in Internet Explorer 4 and above and in Netscape 4 and above.
+
+If you have any questions regarding this agreement or otherwise need technical support, please contact:
+
+Internet Business Solutions SL
+http://www.ibswebdesign.com/
+info@ecommercetemplates.com
+
+Licensing FAQ:
+
+Q: Can I make changes to the color, graphics and layout of the template?
+A: Yes - you can change the template to suit your needs within your HTML editor. Graphics changes require a graphics editor to do so.
+
+Q: I have three Web sites and want them all to look exactly the same. Can I use my template on all three?
+A: Yes - as long as the sites all belong to the person who purchased the template - it can be used as many times as necessary.
+
+Q: I have two clients that would like to use a template that I purchased from you as the design for their own sites. Can I customize this template for their use?.
+A: Each of your clients must first purchase (or you may purchase for them) a copy of the template from us and then you may customize it for them as needed. To use your own copy of the template to create a website for your client is a violation of the licensing agreement and can be prosecuted accordingly.
+
+Q: Can I resell your templates from my Web site?
+A: We have an affiliate program that allows web site owners to sell our templates from their site and earn commissions on those sale. The only manner in which you may legally resell our products is by joining our affiliate program.
+
+Q: Can I post thumbnails of your templates in my portfolio for my clients to select from?
+A: No. Our products are copyright protected materials and using them as part of your portfolio is a direct violation of that copyright. You may link to our site to allow your clients to purchase a template - but you cannot behave in any manner indicating the template is of your own design unless you purchase another template specifically for each client on your own.
