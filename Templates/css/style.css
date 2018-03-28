@@ -1,0 +1,464 @@
+﻿/*==========================================================*/
+/*Different Font Families*/
+/*==========================================================*/
+@font-face {
+    font-family: 'DINNextLTPro-Bold';
+    src: url('../fonts/webfonts/35B3E1_0_0.eot');
+    src: url('../fonts/webfonts/35B3E1_0_0.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfonts/35B3E1_0_0.woff2') format('woff2'),
+         url('../fonts/webfonts/35B3E1_0_0.woff') format('woff'),
+         url('../fonts/webfonts/35B3E1_0_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DINNextLTPro-Regular';
+    src: url('../fonts/webfonts/35B3E1_1_0.eot');
+    src: url('../fonts/webfonts/35B3E1_1_0.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfonts/35B3E1_1_0.woff2') format('woff2'),
+         url('../fonts/webfonts/35B3E1_1_0.woff') format('woff'),
+         url('../fonts/webfonts/35B3E1_1_0.ttf') format('truetype');
+}
+
+.DINNextLTPro-Bold { font-family: DINNextLTPro-Bold; }
+.DINNextLTPro-Regular { font-family: DINNextLTPro-Regular; }
+    
+/* ::-moz-selection { 
+    background: #fcf8e3;
+}
+
+::selection {
+    background: #fcf8e3;
+}
+
+::-webkit-selection {
+    background: #fcf8e3;
+} */
+/*=============================================================================*/
+/*==================================Common Css ================================*/
+/*=============================================================================*/
+/*==============================================================*/
+/*Top Space with Margin*/
+/*==============================================================*/
+.space0 {
+    margin-top: 0px !important;
+    margin-bottom: 0 !important
+}
+
+.space2 {
+    margin-top: 2px !important;
+}
+
+.space5 {
+    margin-top: 5px !important;
+}
+
+.space10 {
+    margin-top: 10px !important;
+}
+
+.space24 {
+    margin-top: 24px !important;
+}
+
+.space15 {
+    margin-top: 15px !important;
+}
+
+.space20 {
+    margin-top: 20px !important;
+}
+
+.space25 {
+    margin-top: 25px !important;
+}
+
+.space30 {
+    margin-top: 30px !important;
+}
+
+.space35 {
+    margin-top: 35px !important;
+}
+
+.space40 {
+    margin-top: 40px !important;
+}
+
+.space50 {
+    margin-top: 50px !important;
+}
+
+.space60 {
+    margin-top: 60px !important;
+}
+
+.space70 {
+    margin-top: 70px !important;
+}
+
+.space80 {
+    margin-top: 80px !important;
+}
+
+.space90 {
+    margin-top: 90px !important;
+}
+
+.space100 {
+    margin-top: 100px !important;
+}
+
+.space110 {
+    margin-top: 110px !important;
+}
+
+.space-5 {
+    margin-top: -5px !important;
+}
+
+/*===================================================================*/
+/*Font-size and weight*/
+/*===================================================================*/
+.fsize10 {
+    font-size: 10px !important;
+}
+
+.fsize12 {
+    font-size: 12px !important;
+}
+
+.fsize14 {
+    font-size: 14px !important;
+}
+
+.fsize16 {
+    font-size: 16px !important;
+}
+
+.fsize18 {
+    font-size: 18px !important;
+}
+
+.fsize20 {
+    font-size: 20px !important;
+}
+
+.fsize22 {
+    font-size: 22px !important;
+}
+
+.fsize24 {
+    font-size: 24px !important;
+}
+
+.fsize26 {
+    font-size: 26px !important;
+}
+
+.fsize28 {
+    font-size: 28px !important;
+}
+
+.fsize30 {
+    font-size: 30px !important;
+}
+
+.fsize32 {
+    font-size: 32px !important;
+}
+
+.fsize34 {
+    font-size: 34px !important;
+}
+
+.fsize36 {
+    font-size: 36px !important;
+}
+
+.fsize38 {
+    font-size: 38px !important;
+}
+
+.fsize40 {
+    font-size: 40px !important;
+}
+
+.fsize42 {
+    font-size: 42px !important;
+}
+
+.fsize44 {
+    font-size: 44px !important;
+}
+
+.fsize46 {
+    font-size: 46px !important;
+}
+
+.fsize48 {
+    font-size: 48px !important;
+}
+
+.fsize50 {
+    font-size: 50px !important;
+}
+
+.f100 {
+    font-weight: 100;
+}
+
+.f200 {
+    font-weight: 200;
+}
+
+.f300 {
+    font-weight: 300;
+}
+
+.f400 {
+    font-weight: 400;
+}
+
+.f500 {
+    font-weight: 500;
+}
+
+.f600 {
+    font-weight: 600;
+}
+
+.f700 {
+    font-weight: 700;
+}
+
+.f900 {
+    font-weight: 900;
+}
+
+.text-3071ae {
+    color: #3071ae
+}
+
+.text-002d40 {
+    color: #002d40
+}
+
+.text-1aa6b7 {
+    color: #1aa6b7
+}
+
+.text-d9ecf2 {
+    color: #d9ecf2
+}
+
+/*=====================================================================*/
+/*Width*/
+/*=====================================================================*/
+.wid30 {
+    width: 30%;
+}
+
+.wid40 {
+    width: 40%;
+}
+
+.wid50 {
+    width: 50%;
+}
+
+.wid60 {
+    width: 60%;
+}
+
+.wid70 {
+    width: 70%;
+}
+
+.wid80 {
+    width: 80%;
+}
+
+.wid90 {
+    width: 90%;
+}
+
+.wid100 {
+    width: 100%;
+}
+
+/*===================Change a style of placeholder====================*/
+::-webkit-input-placeholder {
+}
+
+::-moz-placeholder {
+}
+
+/* firefox 19+ */
+:-ms-input-placeholder {
+}
+
+input:-moz-placeholder {
+}
+
+.anti-row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+/*============================================================*/
+/*============================================================*/
+/*=====================Common Css Ends Here===================*/
+/*============================================================*/
+/*===========================================================*/
+/*Css on HTML Tags*/
+/*============================================================*/
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.75px;
+    height: 100%;
+    color: #666;
+}
+
+p, ul, ol {
+    margin-bottom: 0px;
+}
+
+a {
+    color: #3071ae;
+    text-decoration: none;
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+}
+
+a:hover, a:focus, a:active {
+    color: #3071ae;
+    text-decoration: none;
+}
+
+label {
+    font-weight: inherit;
+}
+
+.btn:focus, .btn:active, a:focus, a:active {
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+    outline: 0;
+}
+
+/* Navigation Starts */
+
+.display_table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.display_cell {
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.btn-default {
+    background-color: #000;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 10px 16px;
+    line-height: 1;
+}
+
+* {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    outline: 0;
+    -webkit-outline: 0;
+}
+
+.navbar {
+    border-radius: 0;
+    min-height: 110px;
+    border: 0;
+    background: #fff;
+}
+
+.navbar-brand {
+    height: auto;
+}
+
+.navbar-brand > img {
+    width: 80px;
+}
+
+.mid-nav, .navbar-form {
+    margin-top: 30px;
+}
+
+.navbar-form {
+    margin-top: 35px;
+}
+
+.mid-nav {
+    margin-left: 15%;
+}
+
+.navbar-form .form-control {
+    border-radius: 0;
+    border: 0;
+    border-left: 1px solid #ddd;
+    box-shadow: none;
+    background: transparent;
+    height: 30px;
+    min-height: unset;
+    padding: 6px 10px 6px 15px;
+}
+
+.navbar-form .btn-default {
+    background: #000;
+    color: #fff;
+    padding: 6px 0;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+
+.navbar-form .btn-default .material-icons {
+    font-size: 18px;
+}
+
+/* Navigation Ends */
+
+
+/* Responsive Starts */
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 500px) {
+}
+
+@media (max-width: 375px) {
+}
+
+/* Responsive Ends */

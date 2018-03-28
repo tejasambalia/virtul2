@@ -2,9 +2,9 @@
 
 // You host should be able to provide you with these settings if you do not know them already
 
-$db_username = "u197245873_virtu";  // Your database login username
-$db_password = "XlIcabHoN1yQ";  // Your database login password
-$db_name = "u197245873_virtu";      // The name of the database you wish to use
+$db_username = "root";  // Your database login username
+$db_password = "123";  // Your database login password
+$db_name = "virtul";      // The name of the database you wish to use
 $db_host = "localhost";   // The address of the database. Often this is localhost, but may be for example db.yoursite.com
 
 //////////////////////////////////////////////////

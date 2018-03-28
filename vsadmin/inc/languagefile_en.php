@@ -348,7 +348,7 @@ $GLOBALS['xxEFYF2']=' has recommended this site to you';
 $GLOBALS['xxEFYF3']=', and sends you the following message:';
 $GLOBALS['ssIncTax']='(%s <span style="font-size:10px">Inc. Tax</span>)';
 $GLOBALS['xxMCCO']='Checkout';
-$GLOBALS['xxMCSC']='Shopping cart';
+$GLOBALS['xxMCSC']='Cart';
 $GLOBALS['xxMCIIC']='Product(s) in cart';
 $GLOBALS['xxHndlg']='Handling';
 $GLOBALS['xxFree']='Free';

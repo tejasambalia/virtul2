@@ -1,0 +1,50 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header style ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.syntaxhighlighter .gutter .line {border-right: 3px solid #DADADA !important;}
+.syntaxhighlighter .toolbar {background: #B9B9B9 !important;}
+.syntaxhighlighter .line.alt2 {	background-color: #FAFAFA !important;}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ end of syntax hilighter style ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.hilight-wrapper {
+	margin: 0px auto;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	max-width: 1056px;
+	border: 1px solid #ddd;
+}
+.hilight-wrapper .nav{
+	background-color: #f2f2f2;
+}
+.hilight-wrapper .active>a{
+	background-color: #fff !important;
+	padding-bottom: 12px !important;
+}
+.ms-doc-link{
+	float: right;
+	margin-top: 10px;
+	margin-right: 14px;
+	padding-right: 25px;
+	background-image: url('img/document.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	height: 20px;
+
+}
+.html-describe {
+	border-bottom: 1px solid #e1e1e1;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-left: 39px;
+	color: #777777;
+	background-image: url('img/describ-icon.png');
+	background-repeat: no-repeat;
+	background-position: 13px 18px;
+}
+
+.syntaxhighlighter {
+margin-bottom: 0px !important;
+}
+.syntaxhighlighter.html{
+	max-height: 400px;
+}
