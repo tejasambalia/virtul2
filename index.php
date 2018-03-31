@@ -1,262 +1,98 @@
-<?php
-session_cache_limiter('none');
-session_start();
-ob_start();
-?>
-
-<?php include "vsadmin/db_conn_open.php" ?>
-<?php include "vsadmin/inc/languagefile.php" ?>
-<?php include "vsadmin/includes.php" ?>
-<?php include "vsadmin/inc/incfunctions.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-
-        <?php include "core/head.php" ?>
-
-        <title>Virtul</title>
-
-        <!-- syntaxHilighter style sheet -->
-        <link rel="stylesheet" type="text/css" href="assets/syntax-highlighter/styles/shCore.css" media="all">
-        <link rel="stylesheet" type="text/css" href="assets/syntax-highlighter/styles/shThemeDefault.css" media="all">
-        
-        <!-- main style -->
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all">
-
-        <!-- Base MasterSlider style sheet -->
-        <link rel="stylesheet" href="css/masterslider.css" />
-        
-        <!-- Master Slider Skin -->
-        <link href="css/style1.css" rel='stylesheet' type='text/css'>
-         
-        <!-- MasterSlider Template Style -->
-        <link href='css/ms-fullscreen.css' rel='stylesheet' type='text/css'>
-
-        <!-- Base MasterSlider style sheet -->
-        <link rel="stylesheet" href="css/masterslider.css" />
-        
-        <!-- Master Slider Skin -->
-        <link href="css/style1.css" rel='stylesheet' type='text/css'>
-         
-        <!-- MasterSlider Template Style -->
-        <link href='css/ms-fullscreen.css' rel='stylesheet' type='text/css'>
-
-        <style type="text/css">
-            
-
-            .master-slider{
-                height: 100%;
-                font-family: Lato, arial, sans-serif;
-            }
-        </style>
-
-    </head>
-    <body>
-
-        <?php include "core/header.php" ?>
-
-        
-        <div class="ms-fullscreen-template" id="slider1-wrapper">
-            <!-- masterslider -->
-            <div class="master-slider ms-skin-default" id="masterslider">
-                <div class="ms-slide slide-1">
-                    
-                    <img src="images/blank.gif" data-src="img/banners/pexels-photo-886521.jpeg" alt="lorem ipsum dolor sit"/>  
-                    <h3 class="ms-layer bold-text-white bigtext"
-                        data-type="text"
-                        data-effect="rotate3dtop(70,0,0,180)"
-                        data-duration="2000"
-                        data-ease="easeInOutQuint"
-                    >
-                        FOR ART LOVERS
-                    </h3>
-                    <h4 class="ms-layer bold-text-white bigtext-2"
-                        data-type="text"
-                        data-effect="rotate3dbottom(-70,0,0,180)"
-                        data-duration="2000"
-                        data-ease="easeInOutQuint"
-                    >
-                        BY ART LOVERS
-                    </h4>
-                </div>
-                <div class="ms-slide slide-2">
-                  
-                   <h3 class="ms-layer thin-text-white blacktext"
-                        data-type="text"
-                        data-effect="rotate3dleft(50,0,0,480)"
-                        data-duration="2000"
-                        data-ease="easeInOutQuint"
-                    >
-                        MODERN
-                    </h3>
-                    <h3 class="ms-layer thin-text-black whitetext"
-                        data-type="text"
-                        data-effect="rotate3dright(-50,0,0,480)"
-                        data-duration="2000"
-                        data-ease="easeInOutQuint"
-                    >
-                        DESIGN
-                    </h3>
-                    <img src="images/blank.gif" data-src="img/banners/painting-pencil-paint-pencils.jpg" alt="lorem ipsum dolor sit"/>     
-                </div>
-            </div>
-            <!-- end of masterslider -->
-        </div>
-
-        <div class="home-creatives">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="title">crafted for creatives</h1>
-                        <h2 class="title_text">Lorem ipsum donor sit ametrt</h2>
-                    </div>
-                </div>
-                <div class="row creative_pic_grid">
-                    <div class="col-md-4">
-                        <div class="creative_grid">
-                            <img src="img/banners/pexels-photo-262034.jpeg" class="img-responsive wid100">
-                        </div>
-                        <div class="creative_grid space30">
-                            <img src="img/banners/pexels-photo-198327.jpeg" class="img-responsive wid100">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="creative_grid">
-                            <img src="img/banners/pexels-photo-133170.jpeg" class="img-responsive wid100">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="creative_grid">
-                            <img src="img/banners/pexels-photo-312420.jpeg" class="img-responsive wid100">
-                        </div>
-                        <div class="creative_grid space30">
-                            <img src="img/banners/pexels-photo-220421.jpeg" class="img-responsive wid100">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="home-who-we">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-
-                        <h3 class="title">Our story</h3>
-                        <h4 class="title_text">Lorem ipsum donor sit amet</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        </p>
-                        <a href="#" class="btn btn-default btn-lg">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="home-categories-sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h2 class="title">Top art categories</h2>
-                        <h2 class="title_text">Lorem ipsum donor sit amet</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="home-cate-box">
-                            <img src="img/banners/painting-black-paint-roller.jpg" class="img-responsive wid100">
-                            <h3>Painting</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="home-cate-box">
-                            <img src="img/banners/pexels-photo-136133.jpeg" class="img-responsive wid100">
-                            <h3>Drawing</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="home-cate-box">
-                            <img src="img/banners/wood-night-camera-vintage.jpg" class="img-responsive wid100">
-                            <h3>Photography</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        
-
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="js/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/owl.carousel.js"></script>
-        <script type="text/javascript">
-            $('.home-hero-sec .owl-carousel').owlCarousel({
-                loop:true,
-                margin:0,
-                nav:true,
-                responsive:{
-                    0:{
-                        items:1
-                    }
-                }
-            })
-        </script>
-        
-        <script src="js/jquery.easing.min.js"></script>
-        <!-- Master Slider -->
-        <script src="js/masterslider.min.js"></script>
-
-        <!-- Tabs -->
-        <script src="assets/js/tab.js"></script>
-        <script src="assets/syntax-highlighter/scripts/shCore.js"></script>
-        <script src="assets/syntax-highlighter/scripts/shBrushXml.js"></script>
-        <script src="assets/syntax-highlighter/scripts/shBrushCss.js"></script>
-        <script src="assets/syntax-highlighter/scripts/shBrushJScript.js"></script>
-        <script type="text/javascript">     
+  <head>
     
-            var slider = new MasterSlider();
-            slider.setup('masterslider' , {
-                width:1024,
-                height:768,
-                space:3,
-                view:'basic',
-                autofill:true,
-                speed:5,
-                autoplay:true,
-                loop:true
-            });
-            
-            slider.control('arrows' ,{insertTo:'#masterslider'});   
-            slider.control('bullets');  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Coming Soon</title>
 
-            var wrapper = $('#slider1-wrapper');
-            wrapper.height(window.innerHeight - 0);
-            $(window).resize(function(event) {
-                wrapper.height(window.innerHeight - 0);
-            });
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Proza+Libre:400,400i,500,500i" rel="stylesheet">
 
-            $('#myTab a').click(function (e) {
-              e.preventDefault()
-              $(this).tab('show')
-            });
+    <link rel="stylesheet" type="text/css" href="css/commingsoon.css">
 
-            SyntaxHighlighter.all();
-            
-        </script>
-    </body>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="padding-top: 0">
+
+    <section class="coming_soon">
+        <div class="view_table">
+            <div class="view_cell">
+                <img src="img/logo.png" class="img-responsive center-block space20" style="height: 100px;">  
+                <h3 class="coming_title space50"> we launching soon </h3>      
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <p class="coming_in">
+                                Art lover can't wait to see what you build.
+                            </p>
+                        </div>
+                        <div class="item">
+                            <p class="coming_in">
+                                first we feel then we fall
+                            </p>      
+                        </div>
+                    </div>
+                </div>
+                <ul id="coming_soon" class="list-inline timer_box">
+                  <li><span class="days">00</span><p class="days_text">Days</p></li>
+                    <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
+                    <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
+                    <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
+                </ul>  
+                <!-- <form class="mailchimp_form">
+                    <div class="form-group">
+                        <input type="email" name="mail_add" class="form-control" placeholder="Enter Email Address" required="true">
+                        <button type="submit" class="btn"> get notified! </button>
+                    </div>
+                </form> -->
+                <!-- Begin MailChimp Signup Form -->
+                <div id="mc_embed_signup">
+                <form action="//virtul.us15.list-manage.com/subscribe/post?u=a1e86c69c8dd82e5c252aade9&amp;id=c5b047ca96" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp_form" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                <div class="mc-field-group form-group">
+                    <input type="email" value="" name="EMAIL" placeholder="Enter Email Address" class="required email form-control" id="mce-EMAIL">
+                    <input type="submit" value="get notified!" name="subscribe" id="mc-embedded-subscribe" class="button btn">
+                </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a1e86c69c8dd82e5c252aade9_c5b047ca96" tabindex="-1" value=""></div>
+                    
+                    </div>
+                </form>
+                </div>
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                <!--End mc_embed_signup-->
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.js"></script>
+
+    <script type="text/javascript">
+        $('#coming_soon').countdown({
+            date: '8/06/2018 23:59:59',
+            days: 'Days'
+        }, function () {
+            alert('Done!');
+        });
+    </script>
+  </body>
 </html>

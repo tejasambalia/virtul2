@@ -1,0 +1,1007 @@
+/*==========================================================*/
+/*Different Font Families*/
+/*==========================================================*/
+@font-face {
+    font-family: 'copperplate-gothic-light';
+    src: url('../fonts/copperplate-gothic-light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PeignotLTStd-Bold';
+    src: url('../fonts/Peignot/PeignotLTStd-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PeignotLTStd-Demi';
+    src: url('../fonts/Peignot/PeignotLTStd-Demi.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PeignotLTStd-Light';
+    src: url('../fonts/Peignot/PeignotLTStd-Light.eot');
+    src: url('../fonts/Peignot/PeignotLTStd-Light.otf') format('opentype'),
+    url('../fonts/Peignot/PeignotLTStd-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'slick';
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.svg') format('svg'),
+    url('../fonts/slick.ttf') format('truetype'),
+    url('../fonts/slick.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ::-moz-selection { 
+    background: #fcf8e3;
+}
+
+::selection {
+    background: #fcf8e3;
+}
+
+::-webkit-selection {
+    background: #fcf8e3;
+} */
+
+/*===============================================================================================================================================================================*/
+/*============================================================================Common Css Files===================================================================================*/
+/*===============================================================================================================================================================================*/
+
+/*==============================================================*/
+/*Top Space with Margin*/
+/*==============================================================*/
+.space0 {
+    margin-top: 0px !important;
+    margin-bottom: 0 !important
+}
+
+.space2 {
+    margin-top: 2px !important;
+}
+
+.space5 {
+    margin-top: 5px !important;
+}
+
+.space10 {
+    margin-top: 10px !important;
+}
+
+.space24 {
+    margin-top: 24px !important;
+}
+
+.space15 {
+    margin-top: 15px !important;
+}
+
+.space20 {
+    margin-top: 20px !important;
+}
+
+.space25 {
+    margin-top: 25px !important;
+}
+
+.space30 {
+    margin-top: 30px !important;
+}
+
+.space35 {
+    margin-top: 35px !important;
+}
+
+.space40 {
+    margin-top: 40px !important;
+}
+
+.space50 {
+    margin-top: 50px !important;
+}
+
+.space60 {
+    margin-top: 60px !important;
+}
+
+.space70 {
+    margin-top: 70px !important;
+}
+
+.space80 {
+    margin-top: 80px !important;
+}
+
+.space90 {
+    margin-top: 90px !important;
+}
+
+.space100 {
+    margin-top: 100px !important;
+}
+
+.space110 {
+    margin-top: 110px !important;
+}
+
+.space-5 {
+    margin-top: -5px !important;
+}
+
+/*===================================================================*/
+/*Font-size and weight*/
+/*===================================================================*/
+.fsize10 {
+    font-size: 10px !important;
+}
+
+.fsize12 {
+    font-size: 12px !important;
+}
+
+.fsize14 {
+    font-size: 14px !important;
+}
+
+.fsize16 {
+    font-size: 16px !important;
+}
+
+.fsize18 {
+    font-size: 18px !important;
+}
+
+.fsize20 {
+    font-size: 20px !important;
+}
+
+.fsize22 {
+    font-size: 22px !important;
+}
+
+.fsize24 {
+    font-size: 24px !important;
+}
+
+.fsize26 {
+    font-size: 26px !important;
+}
+
+.fsize28 {
+    font-size: 28px !important;
+}
+
+.fsize30 {
+    font-size: 30px !important;
+}
+
+.fsize32 {
+    font-size: 32px !important;
+}
+
+.fsize34 {
+    font-size: 34px !important;
+}
+
+.fsize36 {
+    font-size: 36px !important;
+}
+
+.fsize38 {
+    font-size: 38px !important;
+}
+
+.fsize40 {
+    font-size: 40px !important;
+}
+
+.fsize42 {
+    font-size: 42px !important;
+}
+
+.fsize44 {
+    font-size: 44px !important;
+}
+
+.fsize46 {
+    font-size: 46px !important;
+}
+
+.fsize48 {
+    font-size: 48px !important;
+}
+
+.fsize50 {
+    font-size: 50px !important;
+}
+
+.f100 {
+    font-weight: 100;
+}
+
+.f200 {
+    font-weight: 200;
+}
+
+.f300 {
+    font-weight: 300;
+}
+
+.f400 {
+    font-weight: 400;
+}
+
+.f500 {
+    font-weight: 500;
+}
+
+.f600 {
+    font-weight: 600;
+}
+
+.f700 {
+    font-weight: 700;
+}
+
+.f900 {
+    font-weight: 900;
+}
+
+/*====================================================================*/
+/*Width*/
+/*=====================================================================*/
+
+.wid30 {
+    width: 30%;
+}
+
+.wid40 {
+    width: 40%;
+}
+
+.wid50 {
+    width: 50%;
+}
+
+.wid60 {
+    width: 60%;
+}
+
+.wid70 {
+    width: 70%;
+}
+
+.wid80 {
+    width: 80%;
+}
+
+.wid90 {
+    width: 90%;
+}
+
+.wid100 {
+    width: 100%;
+}
+
+/*===================Change a style of placeholder====================*/
+
+::-webkit-input-placeholder {
+}
+
+::-moz-placeholder {
+}
+
+/* firefox 19+ */
+:-ms-input-placeholder {
+}
+
+input:-moz-placeholder {
+}
+
+.anti-row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+/*==================================================================*/
+
+/*==============================================================================================================================================================================*/
+/*=======================================================================Common Css Ends Here===================================================================================*/
+/*==============================================================================================================================================================================*/
+
+/*===========================================================*/
+/*Css on HTML Tags*/
+/*============================================================*/
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    /*font-family: 'Proza Libre', sans-serif;*/
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.75px;
+    height: 100%;
+    color: #474648;
+    padding-top: 60px;
+}
+
+p, ul, ol {
+    margin-bottom: 0px;
+}
+
+a {
+    color: #05cc47;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #05cc47;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+label {
+    font-weight: inherit;
+}
+
+.btn:focus, .btn:active, a:focus, a:active {
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+    outline: 0;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: #000;
+}
+
+@media (min-width: 1300px) {
+    .container {
+        width: 1300px;
+    }
+}
+
+/*=====================Coming Soon Section Starts here======================*/
+
+.coming_soon {
+    height: 100%;
+    color: #555
+}
+
+.view_table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.view_cell {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.timer_box {
+    text-align: center;
+}
+
+.timer_box>li {
+    font-size: 25px;
+    border-left: 1px solid #ddd;
+    width: 160px;
+}
+
+.timer_box>li:first-child {
+    border-left:0;
+}
+
+.timer_box>li p {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.timer_box>li span {
+    font-size: 38px;
+    font-weight: 300;
+}
+
+.coming_title {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 20px;
+    font-family: 'Proza Libre', sans-serif;
+}
+
+.coming_in {
+    margin-bottom: 30px;
+    font-size: 22px;
+    letter-spacing: 2.75px;
+    margin: 30px auto 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.mailchimp_form {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mailchimp_form .form-group {
+    margin-top: 80px;
+}
+
+.mailchimp_form .form-group:after,
+.mailchimp_form .form-group:before {
+    display: table;
+    clear: both;
+    content: ''
+}
+
+.mailchimp_form .form-control {
+    float: left;
+    box-shadow: none;
+    border-radius: 0;
+    height: 50px;
+    width: calc(100% - 200px);
+}
+
+.mailchimp_form .btn {
+    float: left;
+    width: 180px;
+    margin-left: 20px;
+    border-radius: 0;
+    height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.mailchimp_form .btn:hover,
+.mailchimp_form .btn:focus {
+    color: #333
+}
+
+@media  (max-width: 767px) {
+    .coming_soon {
+        padding: 0 20px;
+    }
+    .mailchimp_form {
+        width: 100%;
+    }
+    .timer_box>li {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        float: left;
+        margin-bottom: 20px;
+    }
+    .timer_box>li:nth-child(3) {
+        border: 0;
+    }
+    .timer_box>li p {
+        font-size: 10px;
+    }
+    .timer_box>li span {
+        font-size: 30px;
+    }
+    .timer_box:after,
+    .timer_box:before {
+        content: '';
+        clear: both;
+        display: table;
+    }
+    .coming_title {
+        line-height: 1.8;
+        letter-spacing: 5px;
+        margin-bottom: 0;
+        margin-top: 30px !important;
+        font-size: 18px;
+    }
+    .coming_in {
+        font-size: 14px;
+        margin: 0;
+        margin-top: 15px;
+    }
+    .coming_soon .carousel {
+        position: relative;
+        height: 80px;
+        overflow: hidden;
+    }
+    .mailchimp_form .btn {
+        margin-left: 0;
+        margin-top: 20px;
+        display: inline-block;
+        float: none;
+    }
+    .mailchimp_form .form-control {
+        width: 100%;
+        float: none;
+    }
+    .mailchimp_form {
+        text-align: center;
+    }
+    .mailchimp_form .form-group {
+        margin-top: 10px;
+    }
+}
+
+/*=====================Coming Soon Section Ends here======================*/
+
+/*===================== Login Section Starts here======================*/
+
+.login_bg {
+    background: url('../img/yannick-pulver-180756.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg_shadow {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.74);
+}
+
+.login-title {
+    margin-top: 0;
+}
+
+.sign-main-block {
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    width: 400px;
+    margin-left: auto;
+    margin-right: 50px;
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+}
+
+.sign-main-block.sign-center {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.sign-main-block>.row {
+    margin: 0;
+    height: 100%;
+}
+
+.sign-main-block > .row > .col-md-6 {
+    padding: 0;
+    height: 100%;
+}
+
+.sign-side-block {
+    padding: 35px;
+    color: #fff;
+    text-align: center
+}
+
+.form-control {
+    min-height: 40px;
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    color: #444;
+    font-size: 15px;
+}
+
+.sign-side-block .form-control {
+    border: 1px solid transparent;
+}
+
+.btn-signin {
+    border-radius: 0;
+    color: #fff;
+    width: 100%;
+    min-height: 45px;
+    font-size: 19px;
+    background: #05cc47;
+    margin-bottom: 15px;
+}
+
+.btn-google {
+    background: #4285f4;
+    width: 100%;
+    min-height: 45px;
+    font-size: 16px;
+    position: relative;
+    padding: 2px;
+}
+
+.btn-google:hover,
+.btn-google:focus,
+.btn-signin:hover,
+.btn-signin:focus {
+    color: #fff;
+    opacity: 0.8;
+    transition: all 0.6s ease;
+}
+
+.btn-google:after,
+.btn-google:before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.btn-google-icon {
+    float: left;
+    width: 40px;
+    height: 39px;
+    background: #fff;
+    padding: 13px 0;
+    text-align: center;
+}
+
+.btn-text {
+    padding: 8px 12px;
+    float: left;
+    width: calc(100% - 45px);
+}
+
+.side-lines {
+    position: relative;
+    font-size: 13px;
+}
+
+.side-lines:after,
+.side-lines:before {
+    position: absolute;
+    content: '';
+    top: 10px;
+    width: 43%;
+    background: #ccc;
+    height: 1px;
+    opacity: 0.6;
+}
+
+.side-lines:after {
+    left: 0;
+}
+
+.side-lines:before {
+    right: 0;
+}
+
+.register-link {
+    font-weight: 700;
+}
+
+.form-control.error {
+    border: 1px solid #05cc47;
+}
+
+label.error {
+    text-align: left;
+    display: block;
+    margin-top: 5px;
+    color: #05cc47;
+}
+
+@media (max-width: 600px) {
+    .sign-main-block {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        right: 0;
+        left: 0;
+    }
+    .sign-side-block {
+        padding: 35px 10px;
+    }
+}
+
+/*===================== Login Section Ends here  ======================*/
+
+/*===================== Navigation Starts here  ======================*/
+
+.offcanvas {
+    width: 300px;
+    background: #fff;
+    border-right: 1px solid #eee;
+    z-index: 99999;
+}
+
+header {
+    background: #474648;
+    color: #fff;
+    padding: 0 20px;
+    box-shadow: -1px 0px 20px 5px #888;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.close-btn {
+    background: transparent;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 0;
+    border: 0;
+    margin-top: 10px;
+}
+
+.close-btn i {
+    margin-right: 10px;
+    font-size: 30px;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.open-btn {
+    font-size: 51px;
+    background: transparent;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    margin-top: 3px;
+}
+
+.open-btn:hover {
+    color: #fff;
+}
+
+.nav-links {
+    margin-top: 50px;
+}
+
+.nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 15px 12px;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-bottom: 1px solid #eee;
+    color: #222;
+}
+
+.nav-links li:last-child a {
+    border-bottom: 0
+}
+
+.main-logo {
+    text-align: center;
+}
+
+.main-logo > a {
+    display: block;
+    padding: 10px 0;
+}
+
+.main-logo img{
+    height: 40px;
+}
+
+.main-logo > a:hover {
+    opacity: 1;
+}
+
+.main-logo > a:hover {
+    opacity: 1;
+    color: #222;
+}
+
+.profile-img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0px solid #fff;
+    margin-top: 7px;
+    margin-left: auto;
+    display: block;
+}
+.profile-img:hover,
+.profile-img:focus,
+.profile-img:active {
+    opacity: 1;
+}
+
+.top-profile .dropdown-menu {
+    right: 0;
+    left: auto;
+    width: 220px;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    padding-top: 7px;
+    background: transparent;
+    box-shadow: none;
+}
+
+/*===================== Navigation Ends here  ======================*/
+
+/*===================== Profile Starts here  ======================*/
+
+.profile_title_box {
+    margin-top: 90px;
+}
+
+.profile_desg.profile_sub_title {
+    margin-top: 0;
+}
+
+.profile_details {
+    font-size: 14px;
+}
+
+.profile_header {
+    background: #fcf8e3;
+    padding: 30px 0;
+}
+
+.profile_img {
+    width: 250px;
+    border-radius: 50%;
+    border: 5px solid #f1f1f1;
+    position: relative;
+}
+
+.profile_img>img {
+    border-radius: 50%;
+}
+
+.profile_title {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 20px 0;
+    position: relative;
+    font-family: 'Proza Libre', sans-serif;
+    letter-spacing: -1.5px;
+    word-spacing: 3px;
+}
+
+.profile_title>span {
+    display: inline-block;
+    border-bottom: 2px solid #000;
+}
+
+.profile_sub_title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    color: #000;
+}
+
+.profile_right_box {
+    border-left: 1px solid #eee;
+    padding-left: 40px;
+}
+
+.profile_left_box {
+    padding-right: 40px;
+}
+
+.profile_left_box,
+.profile_right_box {
+    padding-top: 20px;
+}
+
+.profile_right_box .profile_title:after {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: 22%;
+    left: -48px;
+    background: #eee;
+    border-radius: 50%;
+}
+
+.portfolio_box ul {
+    margin: 0 -7px;
+}
+
+.portfolio_box ul li {
+    width: 169px;
+    height: 171px;
+    background: #ccc;
+    margin: 7px;
+}
+
+.profile_social li a {
+    display: block;
+    color: #fff;
+    background: #474648;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    padding: 7px 0;
+    border-radius: 50%;
+}
+
+.skills_box .profile_sub_title:first-child {
+    margin-top: 0;
+}
+
+.skills_box ul {
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+.skills_box ul li {
+    border: 1px solid #7c7c7c;
+    height: 16px;
+    width: 16px;
+    margin-right: 2px;
+    border-radius: 50%;
+}
+
+.skills_box ul li.full {
+    background: #7c7c7c;
+}
+
+.skills_box ul li.half {
+    position: relative;
+}
+
+.skills_box ul li.half:after {
+    background: #7c7c7c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 55%;
+    content: '';
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.profile_details .form-control {
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    box-shadow: none;
+}
+
+.img_uploader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.img_uploader .fa {
+    font-size: 30px;
+    color: #474648;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    border: 2px solid #f1f1f1;
+    border-radius: 50%;
+    padding: 12px 0px;
+    margin-top: 125px;
+    margin-left: 200px;
+    z-index: 999;
+    background: #fff;
+}
+/*===================== Profile Ends here  ======================*/
