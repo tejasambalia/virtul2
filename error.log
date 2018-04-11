@@ -2309,3 +2309,8 @@
 [Thu Mar 22 00:22:15.126379 2018] [:error] [pid 4492] [client 127.0.0.1:55766] PHP   2. createanindex() /var/www/git/virtul2/updatestore.php:3406, referer: http://virtul.local/updatestore.php
 [Thu Mar 22 00:22:15.126399 2018] [:error] [pid 4492] [client 127.0.0.1:55766] PHP   3. ect_free_result() /var/www/git/virtul2/updatestore.php:86, referer: http://virtul.local/updatestore.php
 [Thu Mar 22 00:22:15.126410 2018] [:error] [pid 4492] [client 127.0.0.1:55766] PHP   4. mysql_free_result() /var/www/git/virtul2/updatestore.php:67, referer: http://virtul.local/updatestore.php
+[Sun Apr 01 13:37:54.367459 2018] [:error] [pid 2774] [client 127.0.0.1:54990] PHP Warning:  mysql_connect(): Access denied for user 'u974681090_virtu'@'localhost' (using password: YES) in /var/www/git/virtul2/vsadmin/db_conn_open.php on line 14
+[Sun Apr 01 13:37:54.478797 2018] [:error] [pid 2774] [client 127.0.0.1:54990] PHP Stack trace:
+[Sun Apr 01 13:37:54.478870 2018] [:error] [pid 2774] [client 127.0.0.1:54990] PHP   1. {main}() /var/www/git/virtul2/index_main.php:0
+[Sun Apr 01 13:37:54.478894 2018] [:error] [pid 2774] [client 127.0.0.1:54990] PHP   2. include() /var/www/git/virtul2/index_main.php:7
+[Sun Apr 01 13:37:54.478917 2018] [:error] [pid 2774] [client 127.0.0.1:54990] PHP   3. mysql_connect() /var/www/git/virtul2/vsadmin/db_conn_open.php:14

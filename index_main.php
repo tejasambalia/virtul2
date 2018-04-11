@@ -43,8 +43,6 @@ ob_start();
         <link href='css/ms-fullscreen.css' rel='stylesheet' type='text/css'>
 
         <style type="text/css">
-            
-
             .master-slider{
                 height: 100%;
                 font-family: Lato, arial, sans-serif;
@@ -55,7 +53,6 @@ ob_start();
     <body>
 
         <?php include "core/header.php" ?>
-
         
         <div class="ms-fullscreen-template" id="slider1-wrapper">
             <!-- masterslider -->
@@ -104,6 +101,63 @@ ob_start();
             <!-- end of masterslider -->
         </div>
 
+        <div class="home-categories-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="title">Top art categories</h2>
+                        <h2 class="title_text">Lorem ipsum donor sit amet</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="home-cate-box">
+                            <img src="img/banners/painting-black-paint-roller.jpg" class="img-responsive wid100">
+                            <h3>Painting</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="home-cate-box">
+                            <img src="img/banners/pexels-photo-136133.jpeg" class="img-responsive wid100">
+                            <h3>Drawing</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="home-cate-box">
+                            <img src="img/banners/wood-night-camera-vintage.jpg" class="img-responsive wid100">
+                            <h3>Photography</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-who-we">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+
+                        <h3 class="title">Our story</h3>
+                        <h4 class="title_text">Lorem ipsum donor sit amet</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        </p>
+                        <a href="#" class="btn btn-default btn-lg">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="home-creatives">
             <div class="container">
                 <div class="row">
@@ -138,83 +192,7 @@ ob_start();
             </div>
         </div>
 
-        <div class="home-who-we">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-
-                        <h3 class="title">Our story</h3>
-                        <h4 class="title_text">Lorem ipsum donor sit amet</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        </p>
-                        <a href="#" class="btn btn-default btn-lg">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="home-categories-sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h2 class="title">Top art categories</h2>
-                        <h2 class="title_text">Lorem ipsum donor sit amet</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="home-cate-box">
-                            <img src="img/banners/painting-black-paint-roller.jpg" class="img-responsive wid100">
-                            <h3>Painting</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="home-cate-box">
-                            <img src="img/banners/pexels-photo-136133.jpeg" class="img-responsive wid100">
-                            <h3>Drawing</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="home-cate-box">
-                            <img src="img/banners/wood-night-camera-vintage.jpg" class="img-responsive wid100">
-                            <h3>Photography</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        
-
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="js/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/owl.carousel.js"></script>
-        <script type="text/javascript">
-            $('.home-hero-sec .owl-carousel').owlCarousel({
-                loop:true,
-                margin:0,
-                nav:true,
-                responsive:{
-                    0:{
-                        items:1
-                    }
-                }
-            })
-        </script>
+        <?php include('core/footer.php') ?>
         
         <script src="js/jquery.easing.min.js"></script>
         <!-- Master Slider -->

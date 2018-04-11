@@ -29,7 +29,7 @@
         <div class="view_table">
             <div class="view_cell">
                 <img src="img/logo.png" class="img-responsive center-block space20" style="height: 100px;">  
-                <h3 class="coming_title space50"> we launching soon </h3>      
+                <h3 class="coming_title space50"> We launching soon </h3>      
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">

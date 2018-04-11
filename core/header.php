@@ -5,8 +5,8 @@
                     <div class="row">
                         <div class="col-md-6">
                             <ul class="list-inline top_contact">
-                                <li><a href="tel:+91940938 8600"><span class="material-icons">call</span> +91 940 938 8600</a></li>
-                                <li><a href="mailto:art@virtul.in"><span class="material-icons">email</span> art@virtul.in</a></li>
+                                <li><a href="tel:+91940938 8600"><span class="ion-ios-telephone ion-icons"></span> +91 940 938 8600</a></li>
+                                <li><a href="mailto:art@virtul.in"><span class="ion-android-mail ion-icons"></span> art@virtul.in</a></li>
                             </ul>
                         </div>
                         <div class="col-md-6">
@@ -55,7 +55,7 @@
                         <div class="form-group cursor-blink">
                             <input type="text" class="form-control" placeholder="Search" autofocus="">
                         </div>
-                        <button type="submit" class="btn btn-default"><span class="material-icons">search</span></button>
+                        <button type="submit" class="btn btn-default"><span class="ion-android-search ion-icons"></span></button>
                     </form>
                 </div>
                 <!-- /.navbar-collapse -->

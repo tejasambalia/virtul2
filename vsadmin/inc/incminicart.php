@@ -66,7 +66,7 @@ ect_free_result($result);
 ?>
       <table class="mincart" width="130" bgcolor="#FFFFFF">
         <tr> 
-          <td class="mincart" bgcolor="#F0F0F0" align="center"><i class="material-icons">shopping_cart</i> 
+          <td class="mincart" bgcolor="#F0F0F0" align="center"><span class="ion-ios-cart-outline"></span> 
             &nbsp;<a class="ectlink mincart" href="<?php print $pageurl?>cart.php"><?php print $GLOBALS['xxMCSC']?></a></td>
         </tr>
 <?php		if(@$_POST['mode']=='update'){ ?>
