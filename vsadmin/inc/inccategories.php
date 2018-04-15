@@ -138,7 +138,7 @@ if(! @$usecsslayout) $headtable='<table width="100%" border="0" cellspacing="3" 
 if($mess1!=''){
 	print $headtable; $headtable='';
 	if(! @$usecsslayout) print '<tr><td align="center"' . ($numcolumns>1 ? ' colspan="' . $numcolumns . '"' : '') . '>';
-	if(@$usecsslayout) print '<div class="categorymessage">' . $mess1 . '</div>'; else print '<p><strong>' . $mess1 . '</strong></p>';
+	if(@$usecsslayout) print '<div class="categorymessage hidden">' . $mess1 . '</div>'; else print '<p><strong>' . $mess1 . '</strong></p>';
 	if(! @$usecsslayout) print '</td></tr>';
 }
 if(@$nowholesalediscounts==TRUE && @$_SESSION['clientUser']!='')
@@ -171,7 +171,7 @@ if($success){
 		if($GLOBALS['xxAlPrCa']!='' && ! $manufacturers) print (@$usecsslayout ? '<div' : '<p') . ' class="navdesc">' . $GLOBALS['xxAlPrCa'] . (@$usecsslayout ? '</div>' : '</p>');
 		if(@$usecsslayout) print '</div>'; else print '</td></tr></table>';
 	}
-	if(@$usecsslayout) print '<div class="categories">'; else print '<table width="98%" border="0" cellspacing="' . ($usecategoryformat==1 && $categorycolumns>1 ? 0 : 3) . '" cellpadding="' . ($usecategoryformat==1 && $categorycolumns>1 ? 0 : 3) . '">';
+	if(@$usecsslayout) print '<div class="categories row">'; else print '<table width="98%" border="0" cellspacing="' . ($usecategoryformat==1 && $categorycolumns>1 ? 0 : 3) . '" cellpadding="' . ($usecategoryformat==1 && $categorycolumns>1 ? 0 : 3) . '">';
 	while($rs=ect_fetch_assoc($result)){
 		if(trim($rs['sectionurl'])!='')
 			$startlink='<a class="ectlink" href="' . getcatid($rs['sectionurl'],@$seocategoryurls?$rs['sectionurl']:'',$rs['rootSection']==1?$seoprodurlpattern:$seocaturlpattern) . '">';
@@ -191,7 +191,7 @@ if($success){
 		$secdesc=trim($rs['sectionDescription']);
 		$noimage=(trim($rs['sectionImage'])=='');
 		if(@$usecsslayout)
-			print '<div class="category">';
+			print '<div class="category col-md-4 eq_height">';
 		else{
 			if($columncount==0) print '<tr>';
 			if($usecategoryformat==1 && $categorycolumns>1) print '<td width="' . $cellwidth . '%" valign="top"><table width="100%" border="0" cellspacing="3" cellpadding="3"><tr>';

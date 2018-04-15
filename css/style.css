@@ -504,15 +504,12 @@ label {
 }
 
 .topminicart {
-    position: relative;
-    padding: 12px 0;
-    display: block !important;
 }
 
 .mincartTop {
     position: absolute;
-    right: -18px;
-    top: 3px;
+    right: -5px;
+    top: 6px;
     font-size: 12px;
 }
 
@@ -532,6 +529,23 @@ label {
     display: inline-block;
     vertical-align: text-top;
     line-height: 1;
+}
+
+.top_cart li.topminicart {
+    width: 150px;
+    display: inline-block;
+    padding: 12px 15px;
+    position: relative;
+}
+
+.top_cart > li > a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.top_cart li {
+    vertical-align: middle;
+    padding: 0 15px;
 }
 
 /* Navigation Ends */

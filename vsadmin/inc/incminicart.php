@@ -70,10 +70,10 @@ ect_free_result($result);
             &nbsp;<a class="ectlink mincart" href="<?php print $pageurl?>cart.php"><?php print $GLOBALS['xxMCSC']?></a></td>
         </tr>
 <?php		if(@$_POST['mode']=='update'){ ?>
-		<tr><td class="mincart" bgcolor="#F0F0F0" align="center"><?php print $GLOBALS['xxMainWn']?></td></tr>
+		<tr><td class="mincart hidden" bgcolor="#F0F0F0" align="center"><?php print $GLOBALS['xxMainWn']?></td></tr>
 <?php		}else{ ?>
         <tr><td class="mincart mincartTop" bgcolor="#F0F0F0" align="center"><?php print '<span class="ectMCquant">('.$totquant.'</span>)' /*. $GLOBALS['xxMCIIC']*/ ?></td></tr>
-		<tr><td class="mincart" bgcolor="#F0F0F0"><div class="mcLNitems"><?php print $mcpdtxt?></div></td></tr>
+		<tr><td class="mincart hidden" bgcolor="#F0F0F0"><div class="mcLNitems"><?php print $mcpdtxt?></div></td></tr>
 <?php			if($mcpdtxt!='' && @$_SESSION['discounts']!=''&&!@$GLOBALS['nopriceanywhere'])$mcdiscounts=(double)$_SESSION['discounts']; ?>
         <tr class="ecHidDsc"<?php if($mcdiscounts==0) print ' style="display:none"'?>><td class="mincart" bgcolor="#F0F0F0" align="center"><span style="color:#FF0000"><?php print $GLOBALS['xxDscnts'] . ' <span class="mcMCdsct">' . FormatEuroCurrency($mcdiscounts)?></span></span></td></tr>
 <?php			if($mcpdtxt!='' && (string)@$_SESSION['xsshipping']!=''){

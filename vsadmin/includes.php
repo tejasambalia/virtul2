@@ -8,7 +8,7 @@ $pathtossl = "";
 $taxShipping=0;
 $pagebarattop=0;
 $productcolumns=2;
-$useproductbodyformat=1;
+$useproductbodyformat=2;
 $usesearchbodyformat=1;
 $usedetailbodyformat=1;
 $useemailfriend=TRUE;
@@ -35,7 +35,7 @@ $showquantonproduct=FALSE;
 $showquantondetail=FALSE;
 $addshippinginsurance=0;
 $noshipaddress=FALSE;
-$pricezeromessage="";
+$pricezeromessage="Inquire For Price";
 $showproductid=FALSE;
 $currencyseparator=" ";
 $noproductoptions=FALSE;
@@ -58,6 +58,13 @@ $extraorderfield1="";
 $extraorderfield1required=FALSE;
 $extraorderfield2="";
 $extraorderfield2required=FALSE;
+$usecsslayout=TRUE;
+$usehardaddtocart=TRUE;
+$imgcheckoutbutton="button";
+$magictoolbox="MagicZoomPlus";
+$useimageincart=TRUE;
+$linkcartproducts=TRUE;
+$detailnameh1=1;
 
 // ===================================================================
 // Please do not edit anything below this line
@@ -76,5 +83,5 @@ $headeralign="left";
 error_reporting (E_ALL ^ E_NOTICE);
 
 define("maxprodopts",15);
-define("helpbaseurl","http://www.ecommercetemplates.com/phphelp/ecommplus/");
+define("helpbaseurl","http://www.virtul.in/");
 </SCRIPT>

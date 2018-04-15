@@ -56,7 +56,7 @@ if(@$noshowdiscounts!=TRUE){
 		print writepagebar($CurPage,$iNumOfPages,$GLOBALS['xxPrev'],$GLOBALS['xxNext'],$pblink,$nofirstpg);
 		if(@$usecsslayout) print "</div>\r\n"; else print '</p></td></tr>';
 	}
-	if(@$usecsslayout) print '<div class="' . $cs . 'products">';
+	if(@$usecsslayout) print '<div class="' . $cs . 'products row">';
 	$totrows=ect_num_rows($allprods);
 	if(ect_num_rows($allprods)==0)
 		print (! @$usecsslayout ? '<tr><td colspan="' . $productcolumns . '" align="center">' : '') . '<p class="noproducts">'.$GLOBALS['xxNoPrds'].'</p>' . (! @$usecsslayout ? '</td></tr>' : '');
@@ -136,7 +136,7 @@ if(@$noshowdiscounts!=TRUE){
 		}
 		if(($localcount % $productcolumns)==0 && ! @$usecsslayout) print '<tr>';
 		if(! @$usecsslayout) print '<td width="' . (int)(100 / $productcolumns) . '%" align="center" valign="top" class="' . $cs . 'product">';
-		print '<div class="' . $cs . 'product">';
+		print '<div class="' . $cs . 'product col-md-3 eq_height">';
 		if(@$perproducttaxrate==TRUE && ! is_null($rs['pTax'])) $thetax=$rs['pTax']; else $thetax=$countryTaxRate;
 		updatepricescript();
 		$shortdesc=trim($rs[getlangid('pDescription',2)]);

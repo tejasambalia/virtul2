@@ -12,6 +12,7 @@
                         <div class="col-md-6">
                             <ul class="list-inline top_cart">
                                 <li class="topminicart"><?php include "vsadmin/inc/incminicart.php" ?></li>
+                                <li><a href="#"><span class="ion-navicon ion-icons"></span> </a></li>
                             </ul>
                         </div>
                     </div>
