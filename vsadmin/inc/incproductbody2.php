@@ -24,7 +24,7 @@ if(@$productcolumns=="") $productcolumns=1;
 if(! (@isset($showcategories) && @$showcategories==FALSE)){
 	if(! @$usecsslayout) print '<tr><td colspan="' . $productcolumns . '"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr>';
 	print '<' . (@$usecsslayout ? 'div' : 'td align="left"') . ' class="prodnavigation">' . $sstrong . (! @$usecsslayout ? '<p class="prodnavigation">' : '') . $tslist . (! @$usecsslayout ? '</p>' : '') . $estrong . '</' . (@$usecsslayout ? 'div' : 'td') . '>' . "\r\n";
-	print '<' . (@$usecsslayout ? 'div' : 'td align="right"') . ' class="checkoutbutton">&nbsp;' . (@$nobuyorcheckout!=TRUE ? imageorbutton($imgcheckoutbutton,$GLOBALS['xxCOTxt'],'checkoutbutton',$path_parts['dirname'] . '/cart.php', FALSE) : '') . '</' . (@$usecsslayout ? 'div' : 'td') . '>' . "\r\n";
+	print '<' . (@$usecsslayout ? 'div' : 'td align="right"') . ' class="checkoutbutton hidden">&nbsp;' . (@$nobuyorcheckout!=TRUE ? imageorbutton($imgcheckoutbutton,$GLOBALS['xxCOTxt'],'checkoutbutton',$path_parts['dirname'] . '/cart.php', FALSE) : '') . '</' . (@$usecsslayout ? 'div' : 'td') . '>' . "\r\n";
 	if(! @$usecsslayout) print '</tr></table></td></tr>' . "\r\n";
 }
 if(@$isproductspage) dofilterresults($productcolumns);
@@ -141,7 +141,7 @@ if(@$noshowdiscounts!=TRUE){
 		updatepricescript();
 		$shortdesc=trim($rs[getlangid('pDescription',2)]);
 		if(@$shortdescriptionlimit!=''){ if(@$nostripshortdescription!=TRUE)$shortdesc=strip_tags($shortdesc); $shortdesc=substr($shortdesc, 0, $shortdescriptionlimit) . (strlen($shortdesc)>$shortdescriptionlimit && $shortdescriptionlimit!=0 ? '...' : ''); }
-		print '<form method="post" name="tForm' . $Count . '" id="ectform' . $Count . '" action="' . $path_parts['dirname'] . '/cart.php" style="margin:0;padding:0;" onsubmit="return formvalidator' . $Count . '(this)">';
+		print '<form method="post" name="tForm' . $Count . '" id="ectform' . $Count . '" action="' . $path_parts['dirname'] . '/cart.php" onsubmit="return formvalidator' . $Count . '(this)">';
 		if(! @$usecsslayout) print '<table width="100%" border="0" cellspacing="4" cellpadding="4">';
 		if(@$showproductid==TRUE) print (! @$usecsslayout ? '<tr><td>' : '') . '<div class="'.$cs.'prodid">' . $sstrong . $GLOBALS['xxPrId'] . ': ' . $estrong . $rs['pId'] . '</div>' . (! @$usecsslayout ? '</td></tr>' : '');
 		if(@$manufacturerfield!='' && ! is_null($rs[getlangid('scName',131072)])) print (! @$usecsslayout ? '<tr><td>' : '') . '<div class="'.$cs.'prodmanufacturer">' . $sstrong . $manufacturerfield . ': ' . $estrong . $rs[getlangid('scName',131072)] . '</div>' . (! @$usecsslayout ? '</td></tr>' : '');

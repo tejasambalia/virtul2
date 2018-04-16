@@ -208,7 +208,7 @@ function showdetailimages(){
 				if($magictoolbox=='magic360plus') print $anchorstr . '">' . $imagesstr . '" /></a>'; else print $imagesstr . '" class="' . $magictoolbox . '" />';
 			}elseif($magictoolbox=='MagicZoom' || $magictoolbox=='MagicZoomPlus' || $magictoolbox=='MagicTouch' || $magictoolbox=='MagicMagnify' || $magictoolbox=='MagicMagnifyPlus' || $magictoolbox=='MagicThumb'){
 				if($numallimages>1 && ! @$usecsslayout) print '<table class="detailimage" border="0" cellspacing="1" cellpadding="1"><tr><td class="mainimage">';
-				print '<a href="' . $allgiantimages[0]['imageSrc'] . '" class="' . $magictoolbox . '" ' . @$magictooloptions . ' id="zoom1"><img itemprop="image" id="prodimage'.$Count.'" class="prodimage detailimage" src="' . $allimages[0]['imageSrc'] . '" style="border:0" alt="' . strip_tags($rs[getlangid('pName',1)]) . '" /></a>';
+				print '<a href="' . $allgiantimages[0]['imageSrc'] . '" class="' . $magictoolbox . '" ' . @$magictooloptions . ' id="zoom1"><img itemprop="image" id="prodimage'.$Count.'" class="prodimage detailimage img-responsive center-block" src="' . $allimages[0]['imageSrc'] . '" style="border:0" alt="' . strip_tags($rs[getlangid('pName',1)]) . '" /></a>';
 				if($magictoolbox=='MagicThumb') $relid='thumb-id:'; else $relid='';
 				if($magictoolbox=='MagicZoom' || $magictoolbox=='MagicZoomPlus') $relid='zoom-id:';
 				if($numallimages>1){
@@ -224,13 +224,13 @@ function showdetailimages(){
 				print 'Magic Toolbox Option Not Recognized : ' . $magictoolbox . '<br />';
 		}else{
 			if(($numallimages>1 || is_array($allgiantimages)) && ! @$usecsslayout) print '<table class="detailimage" border="0" cellspacing="1" cellpadding="1"><tr><td class="mainimage">';
-			print '<img itemprop="image" id="prodimage'.$Count.'" class="prodimage detailimage" src="' . $allimages[0]['imageSrc'] . '" alt="'.htmlspecials(strip_tags($rs[getlangid('pName',1)])).'" />';
+			print '<img itemprop="image" id="prodimage'.$Count.'" class="prodimage detailimage img-responsive center-block" src="' . $allimages[0]['imageSrc'] . '" alt="'.htmlspecials(strip_tags($rs[getlangid('pName',1)])).'" />';
 			$showimagelink=(is_array($allgiantimages) ? '<span class="extraimage">(<a class="ectlink" href="javascript:showgiantimage(\'' . $allgiantimages[0]['imageSrc'] . '\')">'.$GLOBALS['xxEnlrge'].'</a>)</span>' : '');
 			if($numallimages>1 || is_array($allgiantimages)) print (@$usecsslayout ? '<div class="imagenavigator detailimagenavigator">' : '</td></tr><tr><td class="imagenavigator detailimagenavigator" align="center">') . ($numallimages>1 ? '<img src="images/leftimage.gif" onclick="return updateprodimage('.$Count.', false);" onmouseover="this.style.cursor=\'pointer\'" alt="'.$GLOBALS['xxPrev'].'"' . (! @$usecsslayout ? ' style="vertical-align:middle;margin:0px;"' : '') . ' />' : '&nbsp;').' '.($numallimages>1 ? '<span class="extraimage extraimagenum" id="extraimcnt'.$Count.'">1</span> <span class="extraimage">'.$GLOBALS['xxOf'].' '.$extraimages.'</span> ' : ''). $showimagelink . ' '.($numallimages>1 ? '<img src="images/rightimage.gif" onclick="return updateprodimage('.$Count.', true);" onmouseover="this.style.cursor=\'pointer\'" alt="'.$GLOBALS['xxNext'].'" style="vertical-align:middle;margin:0px;" />' : '&nbsp;') . (@$usecsslayout ? '</div>' : '</td></tr></table>');
 		}
 	}elseif($psmallimage!=''){
 		if(@$usecsslayout) print '<div class="prodimage detailimage">';
-		print '<img itemprop="image" id="prodimage'.$Count.'" class="prodimage detailimage" src="' . $psmallimage . '" alt="'.htmlspecials(strip_tags($rs[getlangid('pName',1)])).'" />';
+		print '<img itemprop="image" id="prodimage'.$Count.'" class="prodimage detailimage img-responsive center-block" src="' . $psmallimage . '" alt="'.htmlspecials(strip_tags($rs[getlangid('pName',1)])).'" />';
 		if(@$usecsslayout) print '</div>';
 	}else
 		print '&nbsp;';
@@ -389,11 +389,11 @@ function pddreviews(){
 function pddprodnavigation(){
 	global $showcategories,$usecsslayout,$sstrong,$tslist,$estrong;
 	if(! @$usecsslayout) print '<table width="100%" border="0" cellspacing="3" cellpadding="3"><tr>';
-	print (@$usecsslayout ? '<div' : '<td colspan="3" align="left" valign="top"') . ' class="prodnavigation detailprodnavigation">' . $sstrong . (! @$usecsslayout ? '<p class="prodnavigation detailprodnavigation">' : '') . $tslist . (! @$usecsslayout ? '</p>' . $estrong . '</td>' : '</div>');
+	print (@$usecsslayout ? '<div class="row"><div class="col-xs-12"> <div' : '<td colspan="3" align="left" valign="top"') . ' class="prodnavigation detailprodnavigation">' . $sstrong . (! @$usecsslayout ? '<p class="prodnavigation detailprodnavigation">' : '') . $tslist . (! @$usecsslayout ? '</p>' . $estrong . '</td>' : '</div></div></div>');
 }
 function pddcheckoutbutton(){
 	global $usecsslayout,$isinstock,$proddetailtopbuybutton,$nobuyorcheckout,$imgbackorderbutton,$imgbuybutton,$Count,$imgcheckoutbutton,$isbackorder,$usehardaddtocart;
-	print (@$usecsslayout ? '<div' : '<td align="right" valign="top"') . ' class="checkoutbutton detailcheckoutbutton">&nbsp;';
+	print (@$usecsslayout ? '<div' : '<td align="right" valign="top"') . ' class="checkoutbutton detailcheckoutbutton hidden">&nbsp;';
 	if($isinstock && @$proddetailtopbuybutton==TRUE && @$nobuyorcheckout!=TRUE && trim(@$_REQUEST['review'])==''){
 		if($isbackorder)
 			print imageorbutton(@$imgbackorderbutton,$GLOBALS['xxBakOrd'],'buybutton backorder detailbuybutton detailbackorder',(@$usehardaddtocart?'subformid':'ajaxaddcart').'('.$Count.')',TRUE) . '&nbsp;';
@@ -469,7 +469,7 @@ function pddprice(){
 	global $Count,$rs,$pricezeromessage,$thetax,$ssIncTax,$noprice,$countryCurrency;
 	if(@$noprice!=TRUE){
 		$separatetaxinc=@$GLOBALS['showtaxinclusive']==1 && ($rs['pExemptions'] & 2)!=2;
-		print '<div class="detailprice"' . ($rs['pPrice']!=0?' itemprop="offers" itemscope itemtype="http://schema.org/Offer"><meta itemprop="priceCurrency" content="'.$countryCurrency.'"':'') . '><strong>' . $GLOBALS['xxPrice'].($GLOBALS['xxPrice']!=''?':':'') . '</strong> <span class="price" id="pricediv' . $Count . '"'.($rs['pPrice']!=0&&!$separatetaxinc?' itemprop="price"':'').'>' . ($rs['pPrice']==0 && @$pricezeromessage!='' ? $pricezeromessage : FormatEuroCurrency(@$GLOBALS['showtaxinclusive']===2 && ($rs['pExemptions'] & 2)!=2 ? $rs['pPrice']+($rs['pPrice']*$thetax/100.0) : $rs['pPrice'])) . '</span> ';
+		print '<div class="detailprice"' . ($rs['pPrice']!=0?' itemprop="offers" itemscope itemtype="http://schema.org/Offer"><meta itemprop="priceCurrency" content="'.$countryCurrency.'"':'') . '><strong class="hidden">' . $GLOBALS['xxPrice'].($GLOBALS['xxPrice']!=''?':':'') . '</strong> <span class="price" id="pricediv' . $Count . '"'.($rs['pPrice']!=0&&!$separatetaxinc?' itemprop="price"':'').'>' . ($rs['pPrice']==0 && @$pricezeromessage!='' ? $pricezeromessage : FormatEuroCurrency(@$GLOBALS['showtaxinclusive']===2 && ($rs['pExemptions'] & 2)!=2 ? $rs['pPrice']+($rs['pPrice']*$thetax/100.0) : $rs['pPrice'])) . '</span> ';
 		if($separatetaxinc) printf('<span id="taxmsg' . $Count . '"' . ($rs['pPrice']==0 ? ' style="display:none"' : '') . '>' . $ssIncTax . '</span>','<span id="pricedivti' . $Count . '" itemprop="price">' . ($rs['pPrice']==0 ? '-' : FormatEuroCurrency($rs['pPrice']+($rs['pPrice']*$thetax/100.0))) . '</span> ');
 		print '</div>';
 	}
@@ -1048,33 +1048,92 @@ return(false);
 		}
 		$customlayoutarray=explode(',',strtolower(str_replace(' ','',$detailpagelayout)));
 		$hasformvalidator=FALSE;
-		foreach($customlayoutarray as $layoutoption){
-			if($layoutoption=='navigation') pddprodnavigation();
-			elseif($layoutoption=='checkoutbutton') pddcheckoutbutton();
-			elseif($layoutoption=='productimage') pddproductimage();
-			elseif($layoutoption=='productid') pddproductid();
-			elseif($layoutoption=='manufacturer') pddmanufacturer();
-			elseif($layoutoption=='sku') pddsku();
-			elseif($layoutoption=='productname') pdddetailname();
-			elseif($layoutoption=='discounts') pdddiscounts();
-			elseif($layoutoption=='instock') pddinstock();
-			elseif($layoutoption=='shortdescription') pddshortdescription();
-			elseif($layoutoption=='description') pdddescription();
-			elseif($layoutoption=='listprice') pddlistprice();
-			elseif($layoutoption=='price') pddprice();
-			elseif($layoutoption=='currency') pddextracurrency();
-			elseif($layoutoption=='options'){ pddoptions(); $hasformvalidator=TRUE;
-			}elseif($layoutoption=='quantity') pddquantity();
-			elseif($layoutoption=='addtocart') pddaddtocart();
-			elseif($layoutoption=='previousnext') pddpreviousnext();
-			elseif($layoutoption=='emailfriend') pddemailfriend();
-			elseif($layoutoption=='reviews') pddreviews();
-			elseif($layoutoption=='searchwords') pddsearchwords();
-			elseif($layoutoption=='custom1') pddcustom(1);
-			elseif($layoutoption=='custom2') pddcustom(2);
-			elseif($layoutoption=='custom3') pddcustom(3);
-			elseif(trim($layoutoption)!='') print 'UNKNOWN LAYOUT OPTION:'.$layoutoption.'<br />';
-		}
+		// foreach($customlayoutarray as $layoutoption){
+		// 	if($layoutoption=='navigation') pddprodnavigation();
+		// 	elseif($layoutoption=='checkoutbutton') pddcheckoutbutton();
+		// 	elseif($layoutoption=='productimage') pddproductimage();
+		// 	elseif($layoutoption=='productid') pddproductid();
+		// 	elseif($layoutoption=='manufacturer') pddmanufacturer();
+		// 	elseif($layoutoption=='sku') pddsku();
+		// 	elseif($layoutoption=='productname') pdddetailname();
+		// 	elseif($layoutoption=='discounts') pdddiscounts();
+		// 	elseif($layoutoption=='instock') pddinstock();
+		// 	elseif($layoutoption=='shortdescription') pddshortdescription();
+		// 	elseif($layoutoption=='description') pdddescription();
+		// 	elseif($layoutoption=='listprice') pddlistprice();
+		// 	elseif($layoutoption=='price') pddprice();
+		// 	elseif($layoutoption=='currency') pddextracurrency();
+		// 	elseif($layoutoption=='options'){ pddoptions(); $hasformvalidator=TRUE;
+		// 	}elseif($layoutoption=='quantity') pddquantity();
+		// 	elseif($layoutoption=='addtocart') pddaddtocart();
+		// 	elseif($layoutoption=='previousnext') pddpreviousnext();
+		// 	elseif($layoutoption=='emailfriend') pddemailfriend();
+		// 	elseif($layoutoption=='reviews') pddreviews();
+		// 	elseif($layoutoption=='searchwords') pddsearchwords();
+		// 	elseif($layoutoption=='custom1') pddcustom(1);
+		// 	elseif($layoutoption=='custom2') pddcustom(2);
+		// 	elseif($layoutoption=='custom3') pddcustom(3);
+		// 	elseif(trim($layoutoption)!='') print 'UNKNOWN LAYOUT OPTION:'.$layoutoption.'<br />';
+		// }
+
+?>
+
+<div class="row hidden">
+	<div class="col-md-12">		
+		<?php
+			foreach($customlayoutarray as $layoutoption){
+				if($layoutoption=='navigation') pddprodnavigation();
+				elseif($layoutoption=='checkoutbutton') pddcheckoutbutton();
+			}
+		?>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-6 space30">
+		<?php
+			foreach($customlayoutarray as $layoutoption){
+				if($layoutoption=='productimage') pddproductimage();
+			}
+		?>
+	</div>
+	<div class="col-sm-6 space30">
+		<?php
+			foreach($customlayoutarray as $layoutoption){
+				if($layoutoption=='productid') pddproductid();
+				elseif($layoutoption=='manufacturer') pddmanufacturer();
+				elseif($layoutoption=='sku') pddsku();
+				elseif($layoutoption=='productname') pdddetailname();
+				elseif($layoutoption=='discounts') pdddiscounts();
+				elseif($layoutoption=='instock') pddinstock();
+				elseif($layoutoption=='shortdescription') pddshortdescription();
+				elseif($layoutoption=='description') pdddescription();
+				elseif($layoutoption=='listprice') pddlistprice();
+				elseif($layoutoption=='price') pddprice();
+				elseif($layoutoption=='currency') pddextracurrency();
+				elseif($layoutoption=='options'){ pddoptions(); $hasformvalidator=TRUE;
+				}elseif($layoutoption=='quantity') pddquantity();
+				elseif($layoutoption=='addtocart') pddaddtocart();
+				elseif($layoutoption=='custom1') pddcustom(1);
+			}
+		?>
+
+
+		<?php
+			foreach($customlayoutarray as $layoutoption){
+				if($layoutoption=='previousnext') pddpreviousnext();
+				elseif($layoutoption=='emailfriend') pddemailfriend();
+				elseif($layoutoption=='reviews') pddreviews();
+				elseif($layoutoption=='searchwords') pddsearchwords();
+				elseif($layoutoption=='custom2') pddcustom(2);
+				elseif($layoutoption=='custom3') pddcustom(3);
+				// elseif(trim($layoutoption)!='') print 'UNKNOWN LAYOUT OPTION:'.$layoutoption.'<br />';
+			}
+		?>
+	</div>
+</div>
+
+<?php
 		if(! $hasformvalidator){ $prodoptions=''; pddoptions(); }
 	}
 	if(getget('review')!='true') print '</form>';

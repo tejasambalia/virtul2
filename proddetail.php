@@ -23,7 +23,12 @@ ob_start();
 
         <?php include "core/header.php" ?>
 
-        <?php include "vsadmin/inc/incproddetail.php" ?>
+        <div class="product-detail-page">
+        	<div class="container">
+        		<?php include "vsadmin/inc/incproddetail.php" ?>		
+        	</div>
+        </div>
+        
 
         <?php include('core/footer.php') ?>
     </body>

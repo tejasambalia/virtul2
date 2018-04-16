@@ -12,7 +12,7 @@ $useproductbodyformat=2;
 $usesearchbodyformat=1;
 $usedetailbodyformat=1;
 $useemailfriend=TRUE;
-$nobuyorcheckout=FALSE;
+$nobuyorcheckout=TRUE;
 $noprice=FALSE;
 $expireaffiliate=30;
 $usecategoryformat=1;
@@ -65,6 +65,7 @@ $magictoolbox="MagicZoomPlus";
 $useimageincart=TRUE;
 $linkcartproducts=TRUE;
 $detailnameh1=1;
+$custombuybutton="<button class='btn btn-default' type='submit'>Add to cart</button>";
 
 // ===================================================================
 // Please do not edit anything below this line
