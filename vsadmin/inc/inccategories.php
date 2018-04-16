@@ -168,7 +168,7 @@ if($success){
 		if(@$usecsslayout) print '<div class="prodnavigation catnavwrapper">'; else print '<table width="98%" border="0" cellspacing="3" cellpadding="3"><tr>';
 		if(@$allproductsimage!='') print (@$usecsslayout ? '<div' : '<td width="5%" align="right"') . ' class="catimage"><a class="ectlink" href="' . (@$seocategoryurls?str_replace('%s','',$seoprodurlpattern):'products.php') . '"><img class="catimage" src="' . @$allproductsimage . '" border="0" alt="' . $GLOBALS['xxAlProd'] . '" /></a>' . $afterimage . (@$usecsslayout ? '</div>' : '</td>');
 		if(@$usecsslayout) print '<div class="catnavigation">' . $tslist . '</div>'; else print '<td class="catnavigation"><p class="catnavigation"><strong>' . $tslist . '</strong></p>';
-		if($GLOBALS['xxAlPrCa']!='' && ! $manufacturers) print (@$usecsslayout ? '<div' : '<p') . ' class="navdesc">' . $GLOBALS['xxAlPrCa'] . (@$usecsslayout ? '</div>' : '</p>');
+		if($GLOBALS['xxAlPrCa']!='' && ! $manufacturers) print (@$usecsslayout ? '<div' : '<p') . ' class="navdesc hidden">' . $GLOBALS['xxAlPrCa'] . (@$usecsslayout ? '</div>' : '</p>');
 		if(@$usecsslayout) print '</div>'; else print '</td></tr></table>';
 	}
 	if(@$usecsslayout) print '<div class="categories row">'; else print '<table width="98%" border="0" cellspacing="' . ($usecategoryformat==1 && $categorycolumns>1 ? 0 : 3) . '" cellpadding="' . ($usecategoryformat==1 && $categorycolumns>1 ? 0 : 3) . '">';

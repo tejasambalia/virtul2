@@ -719,7 +719,8 @@ footer {
     text-align: center;
 }
 
-.product > form {
+.product > form,
+.category > div {
     border: 1px solid #ccc;
     padding: 10px;
     height: 100%;
@@ -731,7 +732,8 @@ footer {
     display: none;
 }
 
-.prodname > a {
+.prodname > a,
+.catname > a {
     font-size: 18px;
     display: block;
     color: #000;
@@ -759,7 +761,11 @@ footer {
     color: #333;
 }
 
-.product-detail-page {
+.categories {
+    padding-top: 70px;
+}
+
+.product-detail-page, .categories_page {
     padding-bottom: 70px;
 }
 
