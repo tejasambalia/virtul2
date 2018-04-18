@@ -52,9 +52,10 @@
                         <li><a href="#">Designs</a></li>
                     </ul>
                     
-                    <form class="navbar-form navbar-right">
+                    <form class="navbar-form navbar-right" method="post" action="search.php">
                         <div class="form-group cursor-blink">
-                            <input type="text" class="form-control" placeholder="Search" autofocus="">
+                            <input type="hidden" name="pg" value="1">
+                            <input type="text" class="form-control" name="stext" placeholder="Search" autofocus="">
                         </div>
                         <button type="submit" class="btn btn-default"><span class="ion-android-search ion-icons"></span></button>
                     </form>

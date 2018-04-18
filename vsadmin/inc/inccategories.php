@@ -191,7 +191,7 @@ if($success){
 		$secdesc=trim($rs['sectionDescription']);
 		$noimage=(trim($rs['sectionImage'])=='');
 		if(@$usecsslayout)
-			print '<div class="category col-md-4 eq_height">';
+			print '<div class="category col-md-4 eq_height"><div>';
 		else{
 			if($columncount==0) print '<tr>';
 			if($usecategoryformat==1 && $categorycolumns>1) print '<td width="' . $cellwidth . '%" valign="top"><table width="100%" border="0" cellspacing="3" cellpadding="3"><tr>';
@@ -208,7 +208,7 @@ if($success){
 		if($secdesc=='') print @$catseparator;
 		if(@$nocategoryname!=TRUE) print (@$usecsslayout ? '</div>' : '</p>');
 		if($secdesc!='') print (@$usecsslayout ? '<div' : $beforedesc . '<p') . ' class="catdesc">' . $secdesc . $catseparator . (@$usecsslayout ? '</div>' : '</p>');
-		print (@$usecsslayout ? '</div>' : '</td>') . "\r\n";
+		print (@$usecsslayout ? '</div></div>' : '</td>') . "\r\n";
 		if($usecategoryformat==1 && $categorycolumns>1 AND ! @$usecsslayout) print '</tr></table></td>';
 		$columncount++;
 		if($columncount==$categorycolumns && ! @$usecsslayout){

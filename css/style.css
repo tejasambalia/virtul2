@@ -620,6 +620,7 @@ label {
 .newsletter-sec .form-control {
     float: left;
     width: calc(100% - 200px);
+    width: -webkit-calc(100% - 200px);
     margin-right: 20px;
     border-radius: 0;
     min-height: 48px;
@@ -714,7 +715,8 @@ footer {
     padding: 20px 0;
 }
 
-.product {
+.product,
+.category {
     margin-bottom: 30px;
     text-align: center;
 }
@@ -767,6 +769,28 @@ footer {
 
 .product-detail-page, .categories_page {
     padding-bottom: 70px;
+}
+
+.form-control {
+    min-height: 45px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.search-page .control-label {
+    padding-right: 15px;
+}
+
+.search-page {
+    padding: 70px 0;
+}
+
+.search-page .title {
+    margin-bottom: 50px;
+}
+
+.search_page_form .btn {
+    margin-top: 40px;
 }
 
 /* Product Body Page CSS Ends */

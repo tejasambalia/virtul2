@@ -74,7 +74,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <p> &copy;  copyright 2018 @ Virtul.com</p>
+                            <p> &copy;  copyright 2018 @ Virtul.in</p>
                         </div>
                     </div>
                 </div>

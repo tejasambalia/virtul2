@@ -218,33 +218,33 @@ if(getpost('posted')=='1' || getget('pg')!=''){
 }
 if($nobox==''){
 ?>
-	  <form method="get" action="search.php">
+	  <form method="get" action="search.php" class="search_page_form">
 		  <input type="hidden" name="pg" value="1" />
             <table class="cobtbl" width="100%" border="0" cellspacing="1" cellpadding="3">
 			  <tr>
                 <td class="cobhl cobhdr" align="center" colspan="4" height="30">
-                  <strong><?php print $GLOBALS['xxSrchPr']?></strong>
+                  <h1 class="title"><?php print $GLOBALS['xxSrchPr']?></h1>
                 </td>
               </tr>
 			  <tr>
-				<td class="cobhl" align="right"><?php print $GLOBALS['xxSrchFr']?>:</td>
-				<td class="cobll"<?php print @$GLOBALS['nopriceanywhere']?'colspan="3"':''?>><input type="text" name="stext" size="20" maxlength="1024" value="<?php print htmlspecials($stext)?>" /></td>
+				<td class="cobhl" align="right"><div class=" form-group"> <label class="control-label"><?php print $GLOBALS['xxSrchFr']?>:</label></div></td>
+				<td class="cobll"<?php print @$GLOBALS['nopriceanywhere']?'colspan="3"':''?>><div class="form-group"> <input type="text" name="stext" size="20" maxlength="1024" class="form-control" value="<?php print htmlspecials($stext)?>" /></div></td>
 <?php	if(!@$GLOBALS['nopriceanywhere']){
 			if($mobilebrowser) print '</tr><tr>' ?>
-				<td class="cobhl" align="right"><?php print $GLOBALS['xxSrchMx']?>:</td>
-				<td class="cobll"><input type="text" name="sprice" size="10" maxlength="64" value="<?php print htmlspecials($sprice)?>" /></td>
+				<td class="cobhl" align="right"><div class=" form-group"> <label class="control-label"><?php print $GLOBALS['xxSrchMx']?>:</label></div></td>
+				<td class="cobll"><div class=" form-group"> <input type="text" name="sprice" size="10" maxlength="64" class="form-control" value="<?php print htmlspecials($sprice)?>" /></div></td>
 <?php	} ?>
 			  </tr>
 			  <tr>
-				<td class="cobhl" align="right"><?php print $GLOBALS['xxSrchTp']?>:</td>
-				<td class="cobll"><select name="stype" size="1">
+				<td class="cobhl " align="right"><div class="form-group"> <label class="control-label"><?php print $GLOBALS['xxSrchTp']?>:</label></div></td>
+				<td class="cobll"><div class="form-group"> <select name="stype" size="1" class="form-control">
 					<option value=""><?php print $GLOBALS['xxSrchAl']?></option>
 					<option value="any" <?php if($stype=="any") print 'selected="selected"'?>><?php print $GLOBALS['xxSrchAn']?></option>
 					<option value="exact" <?php if($stype=="exact") print 'selected="selected"'?>><?php print $GLOBALS['xxSrchEx']?></option>
-					</select></td>
+					</select></div></td>
 <?php	if($mobilebrowser) print '</tr><tr>' ?>
-				<td class="cobhl" align="right"><?php print $GLOBALS['xxSrchCt']?>:</td>
-				<td class="cobll"><select name="scat" size="1">
+				<td class="cobhl" align="right"><div class=" form-group"> <label class="control-label"><?php print $GLOBALS['xxSrchCt']?>:</label></div></td>
+				<td class="cobll "><div class="form-group"> <select name="scat" size="1" class="form-control">
 					<option value=""><?php print $GLOBALS['xxSrchAC']?></option>
 <?php	$lasttsid=-1;
 		if(@$nocategorysearch!=TRUE){
@@ -257,7 +257,7 @@ if($nobox==''){
 			ect_free_result($allcats);
 		}
 		if($numcats > 0) writemenulevel($catalogroot,1);
-?>					</select></td>
+?>					</select></div></td>
               </tr>
 <?php
 	if(@$searchbymanufacturer!=''){ ?>
@@ -279,7 +279,7 @@ if($nobox==''){
 	}else{ ?>
 			  <tr>
 <?php	if(! $mobilebrowser) print '<td class="cobhl">&nbsp;</td>' ?>
-			    <td class="cobll" colspan="<?php print $mobilebrowser?'2':'3'?>" align="center"><?php print imageorsubmit(@$imgsearch,$GLOBALS['xxSearch'],'search')?></td>
+			    <td class="cobll" colspan="<?php print $mobilebrowser?'2':'3'?>" align="center"><button type="submit" class="btn btn-default btn-lg">Search</button></td>
 			  </tr>
 <?php
 	} ?>
